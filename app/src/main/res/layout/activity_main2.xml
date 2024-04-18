@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ListView to display notes -->
+    <ListView
+        android:id="@+id/notes_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_add_note"/>
+
+    <!-- Button to add a new note -->
+    <Button
+        android:id="@+id/button_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onAddNoteClicked"
+        android:text="Click" />
+
+</RelativeLayout>
